@@ -171,7 +171,7 @@ button i{
     left:50%;
     transform:translate(-50%, -50%);
     width:fit-content;
-    height: fit-content;
+    height:fit-content;
 }
 #fordesk{
     position:fixed;
@@ -214,12 +214,11 @@ button i{
     left:50%;
     transform:translate(-50%, -50%);
     display:none;
-    grid-template-columns:repeat(5, 90px);
-    grid-template-rows:1fr 5 fr;
-    grid-column-gap:10px;
+    grid-template-columns:repeat(5, 50px);
+    grid-template-rows:1fr 5fr;
     align-items:center;
     background-color:#000000d7;
-    width:500px;
+    width:fit-content;
     border:solid 10px #00000011;
     border-radius:20px;
     
@@ -228,13 +227,13 @@ button i{
     grid-column:1 / span 5;
     color:#fff;
     font-family:"Salsa", cursive;
-    font-size:25px;
+    font-size:15px;
     text-align: center;
     padding:0;
     margin:0;
 }
 #formobile img{
-    width:100px;
+    width:50px;
     padding:0;
     margin:0;
     border-radius: 20px;
@@ -262,6 +261,12 @@ button i{
     #styleheader{
         width:97.2vw;
         height:90px;
+    }
+    #formobile{
+        grid-template-columns:repeat(5, 90px);
+        width:95vw;
+        grid-column-gap:2px;
+        grid-column:space-between;
     }
 }
 @media screen and (min-width:992px){
